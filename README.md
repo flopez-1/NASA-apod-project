@@ -3,11 +3,11 @@ Python project analyzing NASA's Astronomy Picture of the Day to analyze astronom
 
 ## Project Overview
 
-This project uses NASA's Astronomy Picture of the Day (APOD) API to retrieve astronomy-related data and analyze the information using Python. The goal is to explore the types of astronomical media featured by NASA and identify common astronomy-related keywords in the titles and explanations.
+This project uses NASA's Astronomy Picture of the Day (APOD) API to retrieve data related to astronomy and analyze it using Python. The goal is to explore the types of astronomical media featured by NASA and identify common keywords in the titles and explanations.
 
 ## Objectives
 
-- Retrieve astronomy records from NASA's APOD API for a specified date range.
+- Retrieve astronomy data from NASA's APOD API for a date range.
 - Organize the retrieved data into a structured dataset using pandas.
 - Count occurrences of selected astronomy-related keywords in titles and explanations.
 - Visualize the results using charts.
