@@ -1,4 +1,4 @@
-###NASA's Astronomy Picture of the Day Project
+## NASA's Astronomy Picture of the Day Project
 Python project analyzing NASA's Astronomy Picture of the Day to analyze astronomy data. 
 
 ## Project Overview
