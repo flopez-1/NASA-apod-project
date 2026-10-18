@@ -84,54 +84,5 @@ plt.tight_layout()
 plt.savefig("output/media_types.png", dpi=300)
 plt.show()
 
-
-# 6. Explore astronomy-related keywords
-
-keywords = [
-    "galaxy",
-    "planet",
-    "black holes",
-    "star",
-    "comet",
-    "asteroid",
-    "moon",
-    "supernova"
-]
-
-# Combine each title and explanation for searching
-all_text = " ".join(
-    (str(row["title"]) + " " + str(row["explanation"]))
-    for _, row in df.iterrows()
-).lower()
-
-keyword_counts = Counter()
-
-for keyword in keywords:
-    # Count occurrences of each keyword
-    pattern = r"\b" + re.escape(keyword) + r"\b"
-    keyword_counts[keyword] = len(
-        re.findall(pattern, all_text)
-    )
-
-keyword_series = pd.Series(keyword_counts).sort_values(
-    ascending=False
-)
-
-print("\nAstronomy keyword counts:")
-print(keyword_series.to_string())
-
-# 7. Plot keyword frequencies
-
-keyword_series.sort_values().plot(
-    kind="barh"
-)
-
-plt.title("Astronomy Keywords in NASA APOD Text")
-plt.xlabel("Number of occurrences")
-plt.ylabel("Keyword")
-plt.tight_layout()
-plt.savefig("output/astronomy_keywords.png", dpi=300)
-plt.show()
-
 print("\nAnalysis is completed!")
 print("CSV and graphs are saved in the output folder.")
