@@ -9,7 +9,6 @@ This project uses NASA's Astronomy Picture of the Day (APOD) API to retrieve dat
 
 - Retrieve astronomy data from NASA's APOD API for a date range.
 - Organize the retrieved data into a structured dataset using pandas.
-- Count occurrences of selected astronomy-related keywords in titles and explanations.
 - Visualize the results using charts.
 
 
@@ -17,7 +16,7 @@ This project uses NASA's Astronomy Picture of the Day (APOD) API to retrieve dat
 
 - `nasaproject_analysis.py` will be used to retrieve, and analyze the data.  
 - `requirements.txt` contains the packages required to run the code. 
-- `output/` will contain the generated charts and graphs. 
+- `output/` will contain the generated graphs. 
 
 ## Installation
 
