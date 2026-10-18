@@ -9,9 +9,8 @@ This project uses NASA's Astronomy Picture of the Day (APOD) API to retrieve ast
 
 - Retrieve astronomy records from NASA's APOD API for a specified date range.
 - Organize the retrieved data into a structured dataset using pandas.
-- Summarize the number of records by media type.
 - Count occurrences of selected astronomy-related keywords in titles and explanations.
-- Visualize the results using bar charts.
+- Visualize the results using charts.
 
 
 ## Repository Contents
@@ -45,12 +44,9 @@ The script retrieves data from the API, performs the analysis, displays summary 
 NASA Astronomy Picture of the Day (APOD):  
 https://apod.nasa.gov/apod/astropix.html
 
-NASA API documentation:  
-https://api.nasa.gov/
 
 ## Expected Outputs
 
 - A CSV file containing the retrieved astronomy records.
 - A bar chart showing the distribution of media types.
-- A horizontal bar chart showing the frequency of selected astronomy-related keywords.
 - Printed summary statistics in the terminal.
